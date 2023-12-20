@@ -47,3 +47,6 @@ function sortName() {
 }
 sortName();
 console.log(warriors);
+let isNNan=2;
+console.log(NaN === NaN);
+console.log(Number.isNaN(NaN));

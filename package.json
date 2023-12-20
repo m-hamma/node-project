@@ -57,6 +57,7 @@
     "raw-body": "^2.5.1",
     "safe-buffer": "^5.2.1",
     "safer-buffer": "^2.1.2",
+    "sass": "^1.69.5",
     "send": "^0.18.0",
     "serve-static": "^1.15.0",
     "setprototypeof": "^1.2.0",
@@ -72,12 +73,16 @@
     "vary": "^1.1.2",
     "ws": "^8.11.0"
   },
+  "watches": {
+    "sass": "sass/**"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass sass/ -o build/css/",
+    "dev": "rerun-script"
   },
   "author": "",
   "license": "ISC",
   "keywords": [],
-  "devDependencies": {},
   "description": ""
 }
